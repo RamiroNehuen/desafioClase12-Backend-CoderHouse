@@ -1,0 +1,13 @@
+
+<section>
+    {{#if listExist}}
+    <h2>Listado de Productos</h2>
+        {{#each productsList}}
+            <div>
+                <h2>{{this.product}}</h2>
+                <img src="{{this.img}}" alt="imagen ilustrativa de producto">
+                <p>{{this.price}}</p>
+            </div>
+        {{/each}}
+    {{/if}}
+</section>
